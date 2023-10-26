@@ -19,6 +19,7 @@ import {
   ModalFooter
 } from '@chakra-ui/react';
 import "../report.css"
+
 import { useEffect, useState } from 'react';
 import { FaLocationArrow } from 'react-icons/fa';
 import MapContainer from './MapContainer';
@@ -92,7 +93,7 @@ function Report() {
         </Box>
         <Box pl={1}>
           <Text fontSize="2xl" fontWeight="extrabold" fontFamily="mono">
-            Pothole
+            RoadSafety
           </Text>
         </Box>
       </Container>

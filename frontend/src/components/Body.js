@@ -12,7 +12,7 @@ import {
   VStack
 } from '@chakra-ui/react'
 import { FaLocationArrow, FaTimes } from 'react-icons/fa'
-
+import env from "react-dotenv";
 import {
   useJsApiLoader,
   GoogleMap,
@@ -32,6 +32,7 @@ function Body() {
   const [loading, setLoading] = useState(false);
   const isPhone = useBreakpointValue({ base: true, md: false });
   const navigate = useNavigate(); 
+  console.log()
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(posi => {
@@ -60,7 +61,7 @@ function Body() {
 
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyCLl4vXNus3Wf4McGMt3gGpwap_kzGIMHk",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API,
     libraries: ['places'],
   })
 
