@@ -38,16 +38,20 @@ _Key Features_:
 4. _Community Engagement_: The platform encourages community engagement by allowing users to contribute to road safety. It fosters a sense of responsibility and collaboration among users.
 
 5. _Route Planning_: Users can plan routes, view traffic conditions, and receive real-time traffic updates to ensure safe and efficient travel.
+## UML
+![image](https://github.com/devil-1964/RoadSafety/assets/98086933/e8498383-9792-4933-9d67-a79bd2aa6e10)
 
-![UML Diagram](image.png)
+## LOGIN 
+![image](https://github.com/devil-1964/RoadSafety/assets/98086933/3899c568-f07c-4af7-ac5a-d757a47f90df)
 
-![Login img](<WhatsApp Image 2023-10-26 at 22.15.51_819f5fe0.jpg>)
+## HOME PAGE
+![WhatsApp Image 2023-10-26 at 22 15 51_fc2c10d2](https://github.com/devil-1964/RoadSafety/assets/98086933/3dcc5009-58df-4f2e-9027-65991f11c0b4)
 
-![Home page](<WhatsApp Image 2023-10-26 at 22.16.46_419017c9.jpg>)
+## ROUTE
+![WhatsApp Image 2023-10-26 at 22 16 46_b46472c5](https://github.com/devil-1964/RoadSafety/assets/98086933/acb9db6e-1550-4777-a3cb-88ec63470395)
 
-![Route](<WhatsApp Image 2023-10-26 at 22.18.09_8207b5ee.jpg>)
-
-![Reporting an issue](<WhatsApp Image 2023-10-26 at 22.19.57_0678ae2e.jpg>)
+## REPORTING AN ISSUE
+![WhatsApp Image 2023-10-26 at 22 19 57_1c79267c](https://github.com/devil-1964/RoadSafety/assets/98086933/5a0ffb72-adfa-44fa-bf97-a8c49a314e9f)
 
 ### Tech Stack:
 
