@@ -36,7 +36,7 @@ npm start
 
 ## Author
 
-- [**Truly Mittal**](https://trulymittal.com)
+- **Tushar Bhatia**
 
 ## Contribute
 
