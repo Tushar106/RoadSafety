@@ -8,6 +8,8 @@ import {
   Input,
   SkeletonText,
   Text,
+  useBreakpointValue,
+  VStack
 } from '@chakra-ui/react'
 import { FaLocationArrow, FaTimes } from 'react-icons/fa'
 
@@ -21,11 +23,13 @@ import {
 import { useEffect, useRef, useState } from 'react'
 import axios from 'axios'
 
+
 function Body() {
   const [center, setCenter] = useState({ lat: 48.8584, lng: 2.2945 });
   const [zoom, setZoom] = useState(15)
   const [markerData, setMarkerData] = useState();
   const [loading, setLoading] = useState(false);
+  const isPhone = useBreakpointValue({ base: true, md: false });
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(posi => {
@@ -129,11 +133,14 @@ function Body() {
         >
           {/* <Marker position={center} /> */}
 
-          {/* <Marker
+          <Marker
             position={center}
             name={"log"}
-            icon={customMarkerIcon}
-          /> */}
+            icon={{
+              url: 'https://maps.google.com/mapfiles/kml/shapes/man.png', // Custom marker icon URL
+              // scaledSize: map.
+            }}
+          /> 
 
           {markerData.map((marker, index) => {
             // console.log(typeof(marker.latitude.$numberDecimal.))
@@ -162,7 +169,7 @@ function Body() {
         m={4}
         bgColor='white'
         shadow='base'
-        minW='container.md'
+        // minW='container.md'
         zIndex='1'
       >
         <HStack spacing={2} justifyContent='space-between'>
@@ -181,7 +188,7 @@ function Body() {
             </Autocomplete>
           </Box>
 
-          <ButtonGroup>
+          {/* <ButtonGroup>
             <Button colorScheme='pink' type='submit' onClick={calculateRoute}>
               Calculate Route
             </Button>
@@ -190,8 +197,34 @@ function Body() {
               icon={<FaTimes />}
               onClick={clearRoute}
             />
-          </ButtonGroup>
+          </ButtonGroup> */}
+      {!isPhone &&
+        <ButtonGroup>
+          <Button colorScheme='pink' type='submit' onClick={calculateRoute}>
+            Calculate Route
+          </Button>
+          <IconButton
+            aria-label='center back'
+            icon={<FaTimes />}
+            onClick={clearRoute}
+          />
+        </ButtonGroup>
+      }
         </HStack>
+        {isPhone &&
+        <VStack spacing={2} m={2}>
+        <ButtonGroup>
+          <Button colorScheme='pink' w={'80%'} type='submit' onClick={calculateRoute}>
+            Calculate Route
+          </Button>
+          <IconButton
+            aria-label='center back'
+            icon={<FaTimes />}
+            onClick={clearRoute}
+          />
+        </ButtonGroup>
+        </VStack>
+      }
         <HStack spacing={4} mt={4} justifyContent='space-between'>
           <Text>Distance: {distance} </Text>
           <Text>Duration: {duration} </Text>
