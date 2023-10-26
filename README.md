@@ -1,26 +1,16 @@
 # Code-with-Google-Maps-2023 - Hack2skill
 
-Welcome to the official repository for the Code-with-Google-Maps-2023 organized by Hack2skill!
+# Team Name - 
 
-## Getting Started
+Tech Buddy
 
-To get started with the Code-with-Google-Maps-2023 repository, follow these steps:
+## Problem Statement - 
 
-### Submission Instruction:
+Real-Time Road Blockage Reporting System with Google
 
-1. Fork this repository
-2. Create a folder with your Team Name
-3. Upload all the code and necessary files in the created folder
-4. Upload a **README.md** file in your folder with the below-mentioned information.
-5. Generate a Pull Request with your Team Name. (Example: submission-XYZ_team)
+## Team Leader Email - 
 
-### README.md must consist of the following information:
-
-#### Team Name - Tech Buddy
-
-#### Problem Statement - Real-Time Road Blockage Reporting System with Google
-
-#### Team Leader Email - btushar301@gmail.com
+btushar301@gmail.com
 
 ### A Brief of the Prototype:
 
@@ -55,61 +45,77 @@ _Key Features_:
 
 ### Tech Stack:
 
-HTML
-CSS
-JAVASCRIPT
-REACT
-NODE
-EXPRESS JS
-PASSPORT JS
-GOOGLE MAPS API
-mongo DB
-CHAKRA UI
+- *HTML*
+
+- *CSS*
+
+- *JAVASCRIPT*
+
+- *REACT*
+
+- *NODE*
+
+- *EXPRESS JS*
+
+- *PASSPORT JS*
+
+- *GOOGLE MAPS API*
+
+- *mongo DB*
+
+- *CHAKRA UI*
 
 ### Step-by-Step Code Execution Instructions:
 
-This Section must contain a set of instructions required to clone and run the prototype so that it can be tested and deeply analyzed
+## To Start The Backend 
 
-git clone 
+**Clone the repo**
 
-cd RoadSafety
+``` git clone https://github.com/Tushar106/RoadSafety.git ```
 
-cd backend
+**Open the RoadSafety**
 
-npm install
+``` cd RoadSafety ```
 
-node index.js
+**Starting the backend**
 
-creating .env
+``` cd backend ```
 
+``` npm install ```
 
+``` node index.js ```
+
+**Create an .env**
+
+```
 PORT=8800
 MONGO="mongodb+srv://<YOUR_MONGODB_NAME>:<PASSWORD>@cluster0.liyyi8h.mongodb.net/RoadSafety?retryWrites=true&w=majority"
 GOOGLE_CLIENT_ID="YOUR_GOOGLE_ID"
 GOOGLE_CLIENT_SECRET="YOUR_GOOGLE_SECRET"
+```
 
-MUST CONTAIN THE ACCESS FOR AUTH0
+- NOTE : **MUST CONTAIN THE ACCESS FOR AUTH0**
 
+## To Start The Frontend
 
+``` cd frontend ```
 
-cd frontend
+``` npm install ```
 
-npm install 
+``` npm start ```
 
-npm start
+**create an .env file**
 
-CREATING .ENV FILE
-
-
-
-
-
-
-
-
-
-
+```
+REACT_APP_GOOGLE_MAPS_API= "YOUR_API_KEY"
+```
 
 ### Future Scope:
 
-Write about the scalability and futuristic aspects of the prototype developed
+**Futuristic Aspects:**
+
+- Predictive Analytics: Incorporating machine learning and AI algorithms, the prototype can predict road safety issues based on historical incident data and current conditions. This can enable proactive measures to mitigate risks.
+
+- Emergency Services Integration: In emergencies, the application can directly notify and coordinate with local emergency services, providing real-time information about incidents to expedite responses.
+
+- Global Data Sharing: In the future, the application can facilitate data sharing with other road safety platforms and government agencies, creating a global network for incident reporting and analysis.
