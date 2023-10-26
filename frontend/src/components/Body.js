@@ -20,7 +20,8 @@ import {
   Autocomplete,
   DirectionsRenderer,
 } from '@react-google-maps/api'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, } from 'react'
+import {useNavigate} from "react-router-dom"
 import axios from 'axios'
 
 
@@ -30,6 +31,7 @@ function Body() {
   const [markerData, setMarkerData] = useState();
   const [loading, setLoading] = useState(false);
   const isPhone = useBreakpointValue({ base: true, md: false });
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(posi => {
@@ -239,6 +241,20 @@ function Body() {
           />
         </HStack>
       </Box>
+      <Flex
+      direction="column"
+      h="100vh" w="100vw" m={4} // Set the container height to 100% of the viewport height
+      justifyContent="flex-end" // Align the content at the bottom
+      alignItems="flex-end" // Align the content to the right
+    >
+      <Button colorScheme="red" type="submit" onClick={()=>{
+        navigate('/report')
+      }}>
+      <Box as="img" width="20px" marginRight="6px" src="https://img.icons8.com/ios-filled/20/000000/error--v1.png" />
+      Report
+    </Button>
+    </Flex>
+
     </Flex>
   )
 }
