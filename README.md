@@ -11,7 +11,7 @@ To get started with the Code-with-Google-Maps-2023 repository, follow these step
 1. Fork this repository
 2. Create a folder with your Team Name
 3. Upload all the code and necessary files in the created folder
-4. Upload a **README.md** file in your folder with the below mentioned informations.
+4. Upload a **README.md** file in your folder with the below-mentioned information.
 5. Generate a Pull Request with your Team Name. (Example: submission-XYZ_team)
 
 ### README.md must consist of the following information:
@@ -42,13 +42,13 @@ _Key Features_:
 ![image](https://github.com/devil-1964/RoadSafety/assets/98086933/e8498383-9792-4933-9d67-a79bd2aa6e10)
 
 ## LOGIN 
-![image](https://github.com/devil-1964/RoadSafety/assets/98086933/3899c568-f07c-4af7-ac5a-d757a47f90df)
-
-## HOME PAGE
 ![WhatsApp Image 2023-10-26 at 22 15 51_fc2c10d2](https://github.com/devil-1964/RoadSafety/assets/98086933/3dcc5009-58df-4f2e-9027-65991f11c0b4)
 
-## ROUTE
+## HOME PAGE
 ![WhatsApp Image 2023-10-26 at 22 16 46_b46472c5](https://github.com/devil-1964/RoadSafety/assets/98086933/acb9db6e-1550-4777-a3cb-88ec63470395)
+
+## ROUTE
+![WhatsApp Image 2023-10-26 at 22 18 09_742db4cb](https://github.com/devil-1964/RoadSafety/assets/98086933/1a83acc6-0aa2-4839-b606-55a7a7d3c9ae)
 
 ## REPORTING AN ISSUE
 ![WhatsApp Image 2023-10-26 at 22 19 57_1c79267c](https://github.com/devil-1964/RoadSafety/assets/98086933/5a0ffb72-adfa-44fa-bf97-a8c49a314e9f)
@@ -63,7 +63,7 @@ NODE
 EXPRESS JS
 PASSPORT JS
 GOOGLE MAPS API
-mongoDB
+mongo DB
 CHAKRA UI
 
 ### Step-by-Step Code Execution Instructions:
